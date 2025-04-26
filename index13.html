@@ -1,0 +1,63 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Device Panel</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .device-box {
+      background: rgba(255, 255, 255, 0.25);
+      border-radius: 15px;
+      padding: 30px;
+      text-align: center;
+      backdrop-filter: blur(8px);
+      box-shadow: 0px 8px 32px rgba(0,0,0,0.2);
+      width: 100%;
+      max-width: 400px;
+    }
+    h2 {
+      color: #333;
+      margin-bottom: 20px;
+    }
+    input, button {
+      width: 90%;
+      margin: 12px 0;
+      padding: 12px;
+      border-radius: 8px;
+      border: none;
+      background: rgba(255,255,255,0.6);
+      font-size: 16px;
+    }
+    button {
+      background: #ff5858;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #ff7e5f;
+    }
+  </style>
+</head>
+<body>
+
+<div class="device-box">
+  <h2>Device Login</h2>
+  <form>
+    <input type="text" placeholder="Device ID" required><br>
+    <input type="password" placeholder="Secret Key" required><br>
+    <button type="submit">Connect Device</button>
+  </form>
+</div>
+
+</body>
+</html>
